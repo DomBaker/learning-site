@@ -1,0 +1,25 @@
+{
+  "name": "learning-site",
+  "version": "1.0.0",
+  "description": "Learning to Develop node applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Dominic Baker",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-nodemon": "^2.5.0",
+    "gulp-sass": "^5.0.0",
+    "nhsuk-frontend": "^5.1.0",
+    "nodemon": "^2.0.12",
+    "nunjucks": "^3.2.3",
+    "webpack-stream": "^6.1.2"
+  }
+}
