@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "build": "gulp build"
   },
   "author": "Dominic Baker",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "nhsuk-frontend": "^5.1.0",
     "nodemon": "^2.0.12",
     "nunjucks": "^3.2.3",
+    "sass": "^1.38.0",
     "webpack-stream": "^6.1.2"
   }
 }
