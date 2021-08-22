@@ -1,22 +1,13 @@
-{%- from 'skip-link/macro.njk' import skipLink %}
-<!DOCTYPE html>
-<!--[if lt IE 9]><html class="ie8" lang="en"><![endif]--><!--[if IE 9]><html class="ie9" lang="en"><![endif]--><!--[if gt IE 9]><!--><html lang="en" style="{{ html_style }}"><!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
 
-    <title>{% block pageTitle %}NHS.UK prototype kit{% endblock %}</title>
-  </head>
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/prism.css" rel="stylesheet">
+  <link href="/css/docs.css" rel="stylesheet">
+{% endblock %}
 
-  <body class="{{ bodyClasses }}">
-    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
-        {{ skipLink({
-          href: '#maincontent',
-          text: 'Skip to main content'
-        }) }}
 
-  </body>
-</html>
+{% from 'button/macro.njk' import button %}
+
+{{ button({
+  "text": "Save and continue"
+}) }}
